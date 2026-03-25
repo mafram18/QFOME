@@ -1,3 +1,4 @@
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -34,3 +35,35 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+=======
+# QFome Backend (MVP simples)
+
+Backend inicial do QFome com foco em simplicidade para apresentacao de MVP.
+
+## O que tem aqui
+- Java 21
+- Spring Boot 3.5
+- Spring Web
+- Spring Actuator
+- Spring Data JPA
+- H2 em arquivo local (sem Docker e sem Postgres)
+
+## Rodar local
+No Windows:
+```bash
+mvnw.cmd spring-boot:run
+```
+
+No Linux/Mac:
+```bash
+./mvnw spring-boot:run
+```
+
+## Endpoints uteis
+- Health: `GET http://localhost:8080/actuator/health`
+- Console H2: `http://localhost:8080/h2-console`
+
+## Configuracoes
+- `src/main/resources/application.yml`: config unica do projeto
+- `.env.example`: variaveis basicas (porta e CORS)
+>>>>>>> 88d4e41 (Checkout do Pedido)
